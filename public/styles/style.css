@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #272343;
+  text-align: center;
+}
+
+body {
+  position: relative;
+}
+
+header {
+  height: 120px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: auto;
+          flex-direction: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+header .logo {
+  border: 2px solid #272343;
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: auto;
+      -ms-flex-pack: auto;
+          justify-content: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+header .logo p {
+  margin-top: -6px;
+  font-size: 8px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: calc(100vh - 120px);
+  margin: 0 20px;
+  padding: 20px;
+  background-color: #f3fbfb;
+}
+
+main .login-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: auto;
+          flex-direction: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .login-section > * {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+main .login-section .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .login-section .intro > * {
+  margin-top: 20px;
+}
+
+main .login-section .intro h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+main .login-section .intro p {
+  padding: 0 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+main .login-section .intro form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .login-section .intro form > * {
+  width: 260px;
+  height: 45px;
+  margin-top: 10px;
+  border: none;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(39, 35, 67, 0.25);
+          box-shadow: 0px 3px 5px 0px rgba(39, 35, 67, 0.25);
+}
+
+main .login-section .intro form .submit-btn {
+  background-color: #ffd803;
+  border-radius: 10px;
+  font-size: 16px;
+  height: 55px;
+  margin-top: 20px;
+}
+
+main .login-section .intro form .submit-btn:hover {
+  background-color: #edca00;
+}
+
+main .login-section .intro .toggle-login-register {
+  border: none;
+  font-size: 16px;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: underline;
+}
+
+main .user-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main .user-section .welcome-text {
+  justify-self: flex-start;
+  margin: 0 0 60px 20px;
+}
+
+main .user-section ul li {
+  padding: 10px 20px;
+  width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: auto;
+          flex-direction: auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .user-section ul li strong {
+  text-align: left;
+}
+
+main .user-section ul li p {
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  font-size: 12px;
+}
+
+main .user-section ul li .account-name {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+main .user-section ul li .account-number {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+main .user-section ul li .account-balance {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+}
+
+main .user-section ul li button, main .user-section ul li div {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+}
+
+main .user-section .add-new-account-btn {
+  width: 260px;
+  height: 45px;
+  border: none;
+  background-color: #ffd803;
+  border-radius: 10px;
+  font-size: 16px;
+  height: 55px;
+  margin: 60px 0 0 20px;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(39, 35, 67, 0.25);
+          box-shadow: 0px 3px 5px 0px rgba(39, 35, 67, 0.25);
+}
+
+main .user-section .add-new-account-btn:hover {
+  background-color: #edca00;
+}
+
+main .add-new-account-section, main .transaction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: auto;
+          flex-direction: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+main .add-new-account-section div, main .transaction div {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+}
+
+main .add-new-account-section div .close-btn, main .transaction div .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+main .add-new-account-section div form, main .transaction div form {
+  background-color: #f3fbfb;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .add-new-account-section div form > *:not(.current-balance), main .transaction div form > *:not(.current-balance) {
+  width: 260px;
+  height: 45px;
+  margin-top: 10px;
+  border: none;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(39, 35, 67, 0.25);
+          box-shadow: 0px 3px 5px 0px rgba(39, 35, 67, 0.25);
+}
+
+main .add-new-account-section div form button, main .transaction div form button {
+  background-color: #ffd803;
+  border-radius: 10px;
+  font-size: 16px;
+  height: 55px;
+  margin-top: 20px;
+}
+
+main .add-new-account-section div form button:hover, main .transaction div form button:hover {
+  background-color: #edca00;
+}
+
+footer {
+  margin: 20px;
+  padding: 20px;
+  height: 160px;
+  background-color: #bae8e8;
+}
+
+.hidden {
+  display: none !important;
+}
+/*# sourceMappingURL=style.css.map */

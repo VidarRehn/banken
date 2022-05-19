@@ -1,0 +1,226 @@
+
+@import "_partials.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $main-font;
+    color: $font-color;
+    text-align: center;
+}
+
+body {
+    position: relative;
+}
+
+header {
+    height: 120px;
+    padding: 20px;
+    @include flex(auto, space-between, flex-end);
+
+    .logo {
+        border: 2px solid $font-color;
+        padding: 12px;
+        @include flex(column, auto, center);
+
+        h1 {
+            font-family: $secondary-font;
+            font-size: 40px;
+            font-weight: 200;
+        }
+
+        p {
+            margin-top: -6px;
+            font-size: 8px;
+        }
+    }
+}
+
+main {
+    @include flex(column, center, center);
+    height: calc(100vh - 120px);
+    margin: 0 20px;
+    padding: 20px;
+    background-color: $primary-color;
+
+    .login-section {
+        @include flex(auto, space-between, center);
+
+        >* {
+            flex-basis: 100%
+        }
+
+        .intro {
+            @include flex(column, center, center);
+
+            >* {
+                margin-top: 20px;
+            }
+
+            h2 {
+                font-size: 30px;
+                font-weight: 400;
+            }
+
+            p {
+                padding: 0 30px;
+                font-family: $secondary-font;
+                font-weight: 300;
+            }
+
+            form {
+                @include flex(column, center, center);
+
+                >* {
+                    width: 260px;
+                    height: 45px;
+                    margin-top: 10px;
+                    border: none;
+                    box-shadow: 0px 3px 5px 0px rgba(39, 35, 67, 0.25);
+                }
+
+                .submit-btn {
+                    background-color: $cto-color;
+                    border-radius: 10px;
+                    font-size: 16px;
+                    height: 55px;
+                    margin-top: 20px;
+
+                    &:hover {
+                        background-color: #edca00;
+                    }
+                }
+            }
+
+            .toggle-login-register {
+                border: none;
+                font-size: 16px;
+                background-color: transparent;
+                box-shadow: none;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .user-section {
+        width: 100%;
+        @include flex(column, flex-start, flex-start);
+
+        .welcome-text {
+            justify-self: flex-start;
+            margin: 0 0 60px 20px;
+        }
+
+        ul {
+            
+            li {
+                padding: 10px 20px;
+                width: 800px;
+                @include flex(auto, flex-start, center);
+
+                strong {
+                    text-align: left;
+                }
+
+                p {
+                    font-family: $secondary-font;
+                    text-align: left;
+                    font-size: 12px;
+                }
+
+                .account-name {
+                    flex-basis: 20%;
+                }
+
+                .account-number {
+                    flex-basis: 50%;
+                }
+
+                .account-balance {
+                    flex-basis: 15%;
+                }
+
+                button, div {
+                    flex-basis: 10%;
+                }
+            }
+        }
+
+        .add-new-account-btn {
+            width: 260px;
+            height: 45px;
+            border: none;
+            background-color: $cto-color;
+            border-radius: 10px;
+            font-size: 16px;
+            height: 55px;
+            margin: 60px 0 0 20px;
+            box-shadow: 0px 3px 5px 0px rgba(39, 35, 67, 0.25);
+
+            &:hover {
+                background-color: #edca00;
+            }
+        }
+
+    }
+
+    .add-new-account-section, .transaction {
+        @include flex(auto, center, center);
+        background-color: rgba(0, 0, 0, 0.4);
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+
+        div {
+            position: relative;
+            background-color: white;
+            padding: 20px;
+
+            .close-btn {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+            }
+
+            form {
+                background-color: $primary-color;
+                padding: 20px;
+                @include flex(column, center, center);
+
+                >*:not(.current-balance) {
+                    width: 260px;
+                    height: 45px;
+                    margin-top: 10px;
+                    border: none;
+                    box-shadow: 0px 3px 5px 0px rgba(39, 35, 67, 0.25);
+                }
+
+                button {
+                    background-color: $cto-color;
+                    border-radius: 10px;
+                    font-size: 16px;
+                    height: 55px;
+                    margin-top: 20px;
+
+                    &:hover {
+                        background-color: #edca00;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    margin: 20px;
+    padding: 20px;
+    height: 160px;
+    background-color: $secondary-color;
+}
+
+
+.hidden {
+    display: none !important;
+}

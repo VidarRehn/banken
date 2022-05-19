@@ -1,0 +1,16 @@
+
+$main-font: 'Roboto', sans-serif;
+$secondary-font: 'Montserrat', sans-serif;
+
+$primary-color: #f3fbfb;
+$secondary-color: #bae8e8;
+$cto-color: #ffd803;
+$font-color: #272343;
+
+
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
