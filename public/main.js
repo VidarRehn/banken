@@ -6,12 +6,13 @@ const firstNameInput = document.querySelector('#first-name')
 const lastNameInput = document.querySelector('#last-name')
 const emailInput = document.querySelector('#email')
 const passwordInput = document.querySelector('#password')
+let userExists = false
 
 loginAndRegisterForm.addEventListener('submit', async (e) => {
     e.preventDefault()
 
     if (state == 'Login'){
-        const response = await fetch('/api/login', {
+        await fetch('/api/login', {
             method: 'post',
             headers: {
                 'Content-Type': 'application/json'
@@ -78,10 +79,14 @@ toggleLoginRegister.addEventListener('click', () => {
     if (state == 'Login'){
         state = 'Register'
         submitButton.innerText = state
+        firstNameInput.required = true
+        lastNameInput.required = true
         toggleLoginRegister.innerText = 'Already a member? Log in here'
     } else {
         state = 'Login'
         submitButton.innerText = state
+        firstNameInput.required = false
+        lastNameInput.required = false
         toggleLoginRegister.innerText = 'Not a member? Register here'
     }
     console.log(state)

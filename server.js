@@ -25,7 +25,6 @@ app.use(session({
     secret: 'This is very secret',
 }))
 
-
 // routes
 
 // GET all users
@@ -113,7 +112,6 @@ app.put('/api/users/:id/accounts', async (req, res) => {
 app.post('/api/login', async (req, res) => {
     const user = await usersCollection.findOne({
         email: req.body.email,
-        // password: req.body.password
     })
     const passMatches = await bcrypt.compare(req.body.password, user.password)
 
@@ -123,7 +121,7 @@ app.post('/api/login', async (req, res) => {
             user: user.user
         })
     } else {
-        res.status(401).send('Unauthorized')
+        res.status(401).json({error: 'Unauthorized'})
     }
 })
 
@@ -131,10 +129,6 @@ app.get('/api/loggedin', (req, res) => {
     if (req.session.user) {
         res.json({
             user: req.session.user
-        })
-    } else {
-        res.status(401).json({
-            error: 'Unauthorized'
         })
     }
 })

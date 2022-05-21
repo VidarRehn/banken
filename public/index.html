@@ -17,9 +17,9 @@
             <p>VIDAR REHN NATIONAL BANK</p>
         </div>
         <nav class="nav-links">
-            <a href="#">About us</a>
-            <a href="#">Private</a>
-            <a href="#">Corporate</a>
+            <a href="/">About us</a>
+            <a href="/">Private</a>
+            <a href="/">Corporate</a>
         </nav>
     </header>
     <main>
@@ -30,8 +30,8 @@
                 <form id="login-form">
                     <input type="text" id="first-name" placeholder="First name" class="hidden">
                     <input type="text" id="last-name" placeholder="Last name" class="hidden">
-                    <input type="email" id="email" placeholder="E-mail address">
-                    <input type="password" id="password" placeholder="Password">
+                    <input type="email" id="email" placeholder="E-mail address" required>
+                    <input type="password" id="password" placeholder="Password" required>
                     <button type="submit" class="submit-btn">Login</button>
                 </form>
                 <button class="toggle-login-register">Not a member? Register here</button>
@@ -39,7 +39,11 @@
         </section>
     </main>
     <footer>
-
+        <div>
+            <p>Vidar Rehn National Bank Ltd.</p>
+            <p>Vidargatan 4</p>
+            <p>113 27 Stockholm, Sweden</p>
+        </div>
     </footer>
 
     <script src="main.js"></script>
